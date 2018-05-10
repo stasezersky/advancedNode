@@ -27,7 +27,7 @@ fs.watch(dirname, (event, file) => {
         currentFiles.push(file)
         return
     }
-    //// doesn;t works with system modifications - vim and such
+    //// doesn;t works with system modifications - vim and such - can be set to check if size changed with fs.stat
     logWithTime(`${file} was modified`)
 })
 
